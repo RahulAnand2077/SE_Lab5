@@ -1,7 +1,6 @@
 """Simple inventory management module for adding, removing, saving, and loading stock data."""
 
 import json
-# import logging
 from datetime import datetime
 
 # Global variable

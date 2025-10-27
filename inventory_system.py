@@ -8,8 +8,10 @@ from datetime import datetime
 stock_data = {}
 
 
-def add_item(item="default", qty=0, logs=[]):
+def add_item(item="default", qty=0, logs=None):
     """Add qty of item to stock_data. Validates inputs and records an optional log list."""
+    if logs is None:
+        logs = []
     if not item:
         return
     stock_data[item] = stock_data.get(item, 0) + qty

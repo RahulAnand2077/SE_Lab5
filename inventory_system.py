@@ -73,7 +73,6 @@ def main():
     load_data()
     print_data()
     print("eval used")  # fixed: removed eval()
-    # eval("print('eval used')")  # dangerous
 
 
 main()
